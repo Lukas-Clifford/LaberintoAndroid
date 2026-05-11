@@ -82,12 +82,10 @@ class Ball () {
         if (cy + radius > maze.bottom) {
             cy = maze.bottom - radius
             velY *= -BOUNCINESS // invierte velocidad
-            onBounce?.invoke() // sonido de rebote
 
         } else if (cy - radius < maze.y) {
             cy = maze.y + radius
             velY *= -BOUNCINESS // invierte velocidad
-            onBounce?.invoke() // sonido de rebote
 
         }
 
